@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    opacity: 0.6;
+    filter: blur(120px);
+
+}
+h3 {
+    font-size: 2rem;
+    margin: 20px;
+    letter-spacing: 1.5px;
+    box-shadow: 2px 2px 7px white;
+    padding: 10px 40px;
+    text-align:center;
+}
+.container .color:nth-child(1) {
+    background-color: tomato;
+    position:absolute;
+    height: 500px;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+
+.container .color:nth-child(2) {
+    background-color: rgb(19, 19, 71);
+    position:absolute;
+    height: 500px;
+    top: 0;
+    right: left;
+    width:50%;
+}
+
+.container .color:nth-child(3) {
+    background-color: rgb(176, 176, 218);
+    position:absolute;
+    height: 200px;
+    bottom: 0;
+    right: 0%;
+    width: 90%;
+}
+.container-content {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;   
+}
+.form-container{
+    width: 60%;
+}
+form input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    outline: none;
+    border:none;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+form input[type='submit'] {
+    width: 100%;
+    background-color: inherit;
+    border: 1px solid white;
+    color:white;
+    cursor: pointer;
+}
+.display {
+    width: 60%;
+}
+.content {
+    width: 100%;
+    padding: 20px;
+    background-color:inherit;
+    border-radius: 10px;
+    color:black;
+    border: 2px solid white;
+    margin: 10px 0;
+    position: relative;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+}
+.close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-family: cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color:red;
+    cursor: pointer;
+    transition: all .5s;
+}
+.line {
+    text-decoration: line-through;
+}
+.check-container{
+    width: 5%;
+}
+.text-content {
+    width: 95%;
+    font-size: 1.2rem;
+    font-family: cursive;
+    color:rgb(37, 36, 36);
+    font-weight:200;
+    text-align: center;
+}
+input[type='checkbox'] {
+    border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+    h3{
+        font-size: 1.3rem;
+        padding: 10px; 
+    }
+    .text-content{
+        font-size:1rem;
+    }
+    .form-container{
+        width:100%;
+        padding: 0 10px;
+        margin: 20px 0;
+    }
+    form input {
+        width: 100%;
+        margin: 10px auto;
+        font-size: 1rem;
+    }
+    form input[type="submit"] {
+        width: 100%;
+        margin: 0px auto
+    }
+    .content{
+        width: 100%;
+        margin: 10px auto;
+
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .display{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
